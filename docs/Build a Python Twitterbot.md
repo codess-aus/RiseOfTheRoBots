@@ -7,19 +7,23 @@
 Open up your favorite text editor and create a new Python script called something like tweetbot.py. Copy in the following code:
 import tweepy
 
-*CONSUMER_KEY = 'replace with your key'*
+'''python
 
-*CONSUMER_SECRET = 'replace with your secret'*
+CONSUMER_KEY = 'replace with your key'
 
-*ACCESS_KEY = 'replace with your access key'*
+CONSUMER_SECRET = 'replace with your secret'
 
-*ACCESS_SECRET = 'replace with your access secret'*
+ACCESS_KEY = 'replace with your access key'
 
-*auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)*
+ACCESS_SECRET = 'replace with your access secret'
 
-*auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)*
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 
-*api = tweepy.API(auth)*
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
-*api.update_status("Hello World!")*
+api = tweepy.API(auth)
+
+api.update_status("Hello World!")
+
+'''
 
