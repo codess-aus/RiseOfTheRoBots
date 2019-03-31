@@ -1,4 +1,4 @@
-## How to Build a Python Twitterbot and deploy it to Heroku :robot: 
+## How to Build a Python Twitterbot :robot: and deploy it to Heroku  
 
 1. Setup a Twitter Account for your bot to use
 2. Link that new Twitter account to a developer account by logging in at https://apps.twitter.com/ and entering the information for your new twitter-bot app.
