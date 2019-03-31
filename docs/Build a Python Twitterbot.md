@@ -7,7 +7,7 @@
 Open up your favorite text editor and create a new Python script called something like tweetbot.py. Copy in the following code:
 import tweepy
 
-'''python
+```python
 
 CONSUMER_KEY = 'replace with your key'
 
@@ -25,5 +25,5 @@ api = tweepy.API(auth)
 
 api.update_status("Hello World!")
 
-'''
+```
 
