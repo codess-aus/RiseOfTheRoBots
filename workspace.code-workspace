@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "docs"
+		},
+		{
+			"path": "code"
+		},
+		{
+			"path": "code\\TwitterBot"
+		}
+	],
+	"settings": {}
+}

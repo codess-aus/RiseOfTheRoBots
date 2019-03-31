@@ -1,11 +1,12 @@
 import tweepy
 import time
-from keys import * 
 
-# NOTE: flush=True is just for running this script
-# with PythonAnywhere's always-on task.
-# More info: https://help.pythonanywhere.com/pages/AlwaysOnTasks/
-print('this is my twitter bot', flush=True)
+CONSUMER_KEY = 'replace with your key'
+CONSUMER_SECRET = 'replace with your secret'
+ACCESS_KEY = 'replace with your access key'
+ACCESS_SECRET = 'replace with your access secret'
+
+print('this is my twitter bot')
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
@@ -26,7 +27,7 @@ def store_last_seen_id(last_seen_id, file_name):
     return
 
 def reply_to_tweets():
-    print('retrieving and replying to tweets...', flush=True)
+    print('retrieving and replying to tweets...')
     # DEV NOTE: use 1060651988453654528 for testing.
     last_seen_id = retrieve_last_seen_id(FILE_NAME)
     # NOTE: We need to use tweet_mode='extended' below to show
@@ -36,12 +37,12 @@ def reply_to_tweets():
                         last_seen_id,
                         tweet_mode='extended')
     for mention in reversed(mentions):
-        print(str(mention.id) + ' - ' + mention.full_text, flush=True)
+        print(str(mention.id) + ' - ' + mention.full_text)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
         if '#riseoftherobots' in mention.full_text.lower():
-            print('found #riseoftherobots', flush=True)
-            print('responding back...', flush=True)
+            print('found #riseoftherobots')
+            print('responding back...')
             api.update_status('Hi ' '@' + mention.user.screen_name +
                     ' Live long and prosper', mention.id)
 
