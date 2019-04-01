@@ -68,4 +68,12 @@ while True:
 ```
 C:\Users\*username*\Documents\GitHub\RiseOfTheRoBots>python tweetbot.py
 ```
+7. Or, we can set it up to run independantly of your workstation, i.e. in the cloud. The simplest way to do that for free is using a service called Heroku, where you will set-up an App - which is just a container that will hold your code and run it
+
+Go to the website and setup a free account:
+
+https://www.heroku.com/
+
+![Image of Heroku](https://github.com/msandfor/RiseOfTheRoBots/blob/master/images/hubot.jpg)
+
 
