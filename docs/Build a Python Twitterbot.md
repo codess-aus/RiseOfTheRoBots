@@ -4,14 +4,18 @@
 2. Link that new Twitter account to a developer account by logging in at https://apps.twitter.com/ and entering the information for your new twitter-bot app.
 3. Go over to the “Keys and Access Tokens” tab and copy the Consumer Key (API Key) and Consumer Secret (API Secret). Also, click the “Create my access token” button at the bottom of the page and copy the resulting Access Token and Access Token Secret. You will use these codes to make API requests on your own account’s behalf.
 
-Open up your favorite text editor (I use VS Code) and create a new Python script called something like tweetbot.py 
+4. Open up your favorite text editor (I use VS Code) and create a new Python script called something like tweetbot.py 
 
-Copy in the following code:
+This is the full tweetbot code for a bot that will respond when tweeted at if the tweet includes #riseoftherobots It will tweet back "Hi @*twitteruser* Live long and Prosper":
 
 ```python
 
 import tweepy
 import time
+CONSUMER_KEY = 'replace with your key'
+CONSUMER_SECRET = 'replace with your secret'
+ACCESS_KEY = 'replace with your access key'
+ACCESS_SECRET = 'replace with your access secret'
 
 print('this is my twitter bot')
 
@@ -44,12 +48,12 @@ def reply_to_tweets():
                         last_seen_id,
                         tweet_mode='extended')
     for mention in reversed(mentions):
-        print(str(mention.id) + ' - ' + mention.full_text, flush=True)
+        print(str(mention.id) + ' - ' + mention.full_text)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
         if '#riseoftherobots' in mention.full_text.lower():
-            print('found #riseoftherobots', flush=True)
-            print('responding back...', flush=True)
+            print('found #riseoftherobots')
+            print('responding back...')
             api.update_status('Hi ' '@' + mention.user.screen_name +
                     ' Live long and prosper', mention.id)
 
@@ -58,4 +62,18 @@ while True:
     time.sleep(15)
 
 ```
+5. Create a text file in the same directory called last_seen_id.txt in it 
+6. Now, you can run that directly from your terminal with the command:
+
+```
+C:\Users\*username*\Documents\GitHub\RiseOfTheRoBots>python tweetbot.py
+```
+7. Or, we can set it up to run independantly of your workstation, i.e. in the cloud. The simplest way to do that for free is using a service called Heroku, where you will set-up an App - which is just a container that will hold your code and run it
+
+Go to the website and setup a free account:
+
+https://www.heroku.com/
+
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="500" height="550"/>
+
 
