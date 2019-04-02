@@ -75,6 +75,6 @@ Go to the website and setup a free account:
 https://www.heroku.com/
 
 # ![Image of Heroku]("https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG")
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" alt="Image of Heroku signup page" width="300" height="350"/>
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="300" height="350"/>
 
 
