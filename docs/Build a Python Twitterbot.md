@@ -74,6 +74,6 @@ Go to the website and setup a free account:
 
 https://www.heroku.com/
 
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="400" height="450"/>
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="500" height="550"/>
 
 
