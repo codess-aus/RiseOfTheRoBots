@@ -56,7 +56,7 @@ if __name__ == "__main__":
     rey = StarwarsUniverse("Rey", "2015", "female")
     print(rey.says("I don't know your name"))
 
-    c3po = Robot(name="C-3PO", birth=1977, gender="male", classification="droid", sidekick=("R2D2", "droid"))
+    c3po = Robot(name="C-3PO", birth=1977, gender="NB", classification="droid", sidekick=("R2D2", "droid"))
 
 
 
