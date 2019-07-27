@@ -1,10 +1,17 @@
 import tweepy
 import time
 
-CONSUMER_KEY = 'replace with your key'
-CONSUMER_SECRET = 'replace with your secret'
-ACCESS_KEY = 'replace with your access key'
-ACCESS_SECRET = 'replace with your access secret'
+# Simple version deployed from your local machine
+# CONSUMER_KEY = 'replace with your key'
+# CONSUMER_SECRET = 'replace with your secret'
+# ACCESS_KEY = 'replace with your access key'
+# ACCESS_SECRET = 'replace with your access secret'
+
+# If you deploy from GitHub you won't want to expose your keys publicly, so need to use Env Vars
+CONSUMER_KEY = os.environ['CONSUMER_KEY']
+CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
+ACCESS_KEY = os.environ['ACCESS_KEY']
+ACCESS_SECRET = os.environ['ACCESS_SECRET']
 
 print('this is my twitter bot')
 
