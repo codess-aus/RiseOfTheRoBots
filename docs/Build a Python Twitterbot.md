@@ -118,7 +118,7 @@ ACCESS_SECRET = os.environ['ACCESS_SECRET']
 
 14. Back in Heroku, for Deployment Method, you can now choose GitHub - and you can browse to the respoitory your code is in.
 
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/herokuDeploy2.PNG" width="500" height="350"/>
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/herokuDeploy2.PNG" width="1230" height="663"/>
 
 
 
