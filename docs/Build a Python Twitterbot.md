@@ -152,9 +152,9 @@ At this stage I'd say don't enable automatic deploys. I had a couple of incident
 
 20. In the Deploy Tab in Heroku, You can then click on **Deploy Branch** in the **Manual Deploy** section
 
-21. Then go to the 
+21. Then go to the Resources tab in Heroku. Hopefully you will see the line of code we wrote for the Procfile displayed under the **Free Dynos** You'll need to click on the pencil icon to edit it, and slide the bar to on.
 
-
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/resources.PNG" width="1246" height="279"/>
 
 
 
