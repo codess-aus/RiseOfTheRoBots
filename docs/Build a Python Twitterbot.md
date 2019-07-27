@@ -156,6 +156,9 @@ At this stage I'd say don't enable automatic deploys. I had a couple of incident
 
 <img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/resources.PNG" width="1246" height="279"/>
 
+And now all that is left to do is to send a tweet to your bot, with the hashtag you coded in and hopefully she will reply:
+
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/borg.PNG" width="814" height="419"/>
 
 
 
