@@ -79,7 +79,7 @@ Go to the website and setup a free account:
 
 https://www.heroku.com/
 
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="500" height="550"/>
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="446.5" height="458"/>
 
 8. Once inside Heroku, click on **New** and then **Create New App**
 
@@ -89,9 +89,41 @@ https://www.heroku.com/
 
 11. Click **Create App**
 
-12. Heroku then gives you some very clear, ste-by-step instructions to deploy your code via Heroku Git
+12. You could then deploy from your local machine to Heroku using the Heroku CLI - it gives you some very clear, step-by-step instructions for that. But I am going to deploy from Github, which means I have to take my KEYs out and add them as environment variable instead.
 
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/HerokuCLI.PNG" width="550" height="350"/>
+So we will replace this bit of code:
+
+```python
+
+CONSUMER_KEY = 'replace with your key'
+CONSUMER_SECRET = 'replace with your secret'
+ACCESS_KEY = 'replace with your access key'
+ACCESS_SECRET = 'replace with your access secret'
+
+```
+
+with this bit of code:
+
+```python
+
+CONSUMER_KEY = os.environ['CONSUMER_KEY']
+CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
+ACCESS_KEY = os.environ['ACCESS_KEY']
+ACCESS_SECRET = os.environ['ACCESS_SECRET']
+
+```
+*Your actual keys should no-longer be part of your code*
+
+13. Now open Github Desktop. Make sure your current respository matches the one your are in within VSCode. Type a summary of the changes e.g. removed keys. Click Commit to master, and then Push origin.
+
+14. Back in Heroku, for Deployment Method, you can now choose GitHub - and you can browse to the respoitory your code is in.
+
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/herokuDeploy2.PNG" width="1230" height="663"/>
+
+
+
+
+
 
 
 
