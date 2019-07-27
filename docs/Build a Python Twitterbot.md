@@ -79,7 +79,7 @@ Go to the website and setup a free account:
 
 https://www.heroku.com/
 
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="1786" height="1832"/>
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="893" height="916"/>
 
 8. Once inside Heroku, click on **New** and then **Create New App**
 
