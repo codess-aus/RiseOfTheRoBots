@@ -68,6 +68,7 @@ while True:
     
 ```
 5. Create a text file in the same directory called last_seen_id.txt in it 
+
 6. Now, you can run that directly from your terminal with the command:
 
 ```
@@ -114,23 +115,46 @@ ACCESS_SECRET = os.environ['ACCESS_SECRET']
 ```
 *Your actual keys should no-longer be part of your code*
 
-13. Now open Github Desktop. Make sure your current respository matches the one your are in within VSCode. Type a summary of the changes e.g. removed keys. Click Commit to master, and then Push origin.
+13. You would also need to add the line *import os* under the *import time* line
 
-14. Back in Heroku, for Deployment Method, you can now choose GitHub - and you can browse to the respoitory your code is in.
+14. You need a few other files. A **Procfile** which begins with a capital P and does not have an extension. It's not a py file, it's not a txt file. No extension. If it has one, this will not work. It only needs one line of code in it:
+
+```python
+
+worker: python3 tweetbot.py
+
+```
+15. I have a **requirements.txt** file. To quickly generate the items for your file, type *“pip3 freeze > requirements.txt”* into the command line to get the list of libraries and their versions. This will output the results into the file for you and should look similar to the code below:
+
+```python
+
+flask>=0.12.3
+gunicorn==19.6.0
+oauthlib==3.0.1
+pypi==2.1
+tweepy==3.7.0
+twitter==1.18.0
+```
+
+16. Now open Github Desktop. Make sure your current respository matches the one your are in within VSCode. Type a summary of the changes e.g. initial commit. Click Commit to master, and then Push origin.
+
+17. Back in Heroku, for Deployment Method, you can now choose GitHub - and you can browse to the respoitory your code is in.
 
 <img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/herokuDeploy2.PNG" width="1230" height="663"/>
 
 At this stage I'd say don't enable automatic deploys. I had a couple of incidents where my twitterbot went rogue, it's better to keep an eye on them in the beggining.
 
-15. Go up towards the top and click on **Settings**
+18. Go up towards the top and click on **Settings**
 
-16. Click on **Reveal Config Vars** and put all your keys in there:
+19. Click on **Reveal Config Vars** and put all your keys in there:
 
 <img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/configvars.PNG" width="1241" height="610"/>
 
+20. In the Deploy Tab in Heroku, You can then click on **Deploy Branch** in the **Manual Deploy** section
 
+21. Then go to the Resources tab in Heroku. Hopefully you will see the line of code we wrote for the Procfile displayed under the **Free Dynos** You'll need to click on the pencil icon to edit it, and slide the bar to on.
 
-
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/resources.PNG" width="1246" height="279"/>
 
 
 
