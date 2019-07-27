@@ -4,6 +4,8 @@
 2. Link that new Twitter account to a developer account by logging in at https://apps.twitter.com/ and entering the information for your new twitter-bot app.
 3. Go over to the “Keys and Access Tokens” tab and copy the Consumer Key (API Key) and Consumer Secret (API Secret). Also, click the “Create my access token” button at the bottom of the page and copy the resulting Access Token and Access Token Secret. You will use these codes to make API requests on your own account’s behalf.
 
+*These KEYS are secret and this simple twitterbot is not keeping them so, so do not push this code to Github.*
+
 4. Open up your favorite text editor (I use VS Code) and create a new Python script called something like tweetbot.py 
 
 This is the full tweetbot code for a bot that will respond when tweeted at if the tweet includes #riseoftherobots It will tweet back "Hi @*twitteruser* Resistence is futile":
@@ -78,5 +80,21 @@ Go to the website and setup a free account:
 https://www.heroku.com/
 
 <img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/Herokusignup.PNG" width="500" height="550"/>
+
+8. Once inside Heroku, click on **New** and then **Create New App**
+
+9. You can leave the App Name Blank and it will create a generic (and yet startlingly beautiful) one for you. The name of your Heroku App is insignificant. It will not be seen (but neither is it a secret).
+
+10. You may leave the region as the US. Or you may switch to Europe depending on which government you trust more.
+
+11. Click **Create App**
+
+12. Heroku then gives you some very clear, ste-by-step instructions to deploy your code via Heroku Git
+
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/HerokuCLI.PNG" width="650" height="550"/>
+
+
+
+
 
 
