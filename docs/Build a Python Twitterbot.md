@@ -91,7 +91,7 @@ https://www.heroku.com/
 
 12. Heroku then gives you some very clear, ste-by-step instructions to deploy your code via Heroku Git
 
-<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/HerokuCLI.PNG" width="650" height="550"/>
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/HerokuCLI.PNG" width="650" height="450"/>
 
 
 
