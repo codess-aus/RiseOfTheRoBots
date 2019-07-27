@@ -120,7 +120,13 @@ ACCESS_SECRET = os.environ['ACCESS_SECRET']
 
 <img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/herokuDeploy2.PNG" width="1230" height="663"/>
 
+At this stage I'd say don't enable automatic deploys. I had a couple of incidents where my twitterbot went rogue, it's better to keep an eye on them in the beggining.
 
+15. Go up towards the top and click on **Settings**
+
+16. Click on **Reveal Config Vars** and put all your keys in there:
+
+<img src="https://github.com/msandfor/RiseOfTheRoBots/blob/gh-pages/images/configvars.PNG" width="1241" height="610"/>
 
 
 
