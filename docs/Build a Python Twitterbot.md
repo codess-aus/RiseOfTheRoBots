@@ -6,7 +6,7 @@
 
 4. Open up your favorite text editor (I use VS Code) and create a new Python script called something like tweetbot.py 
 
-This is the full tweetbot code for a bot that will respond when tweeted at if the tweet includes #riseoftherobots It will tweet back "Hi @*twitteruser* Live long and Prosper":
+This is the full tweetbot code for a bot that will respond when tweeted at if the tweet includes #riseoftherobots It will tweet back "Hi @*twitteruser* Resistence is futile":
 
 ```python
 
